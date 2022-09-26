@@ -1,6 +1,6 @@
 import { useState } from "react"
-import style from "../styles/container.module.scss"
 import 'wmr'
+import style from "../styles/container.module.scss"
 
 type ContainerProps = {
     title: string,
