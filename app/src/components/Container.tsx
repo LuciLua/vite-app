@@ -1,5 +1,4 @@
 import { useState } from "react"
-import 'wmr'
 import style from "../styles/container.module.scss"
 
 type ContainerProps = {

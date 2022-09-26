@@ -1,4 +1,3 @@
-import 'wmr'
 import { useState } from "react"
 import styles from "../styles/main.module.scss"
 
