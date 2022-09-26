@@ -1,0 +1,56 @@
+.menu {
+  background: linear-gradient(#181836 20%, #1818363e);
+
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+}
+
+.menu nav {
+  width: fit-content;
+
+  margin-left: 10px;
+
+  position: relative;
+}
+
+.menu nav ul {
+  display: flex;
+  color: rgb(250, 250, 250);
+
+  padding: 0 30px;
+
+  list-style: none;
+}
+
+.menu nav ul li {
+  font-weight: 600;
+  margin: 10px;
+}
+
+.menu .web {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: 10px;
+
+  width: fit-content;
+}
+
+.menu .web ul {
+  display: flex;
+  color: rgb(250, 250, 250);
+
+  padding: 0 30px;
+
+  align-self: flex-end;
+  list-style: none;
+}
+
+.menu .web ul li {
+  font-weight: 600;
+  margin: 10px;
+}

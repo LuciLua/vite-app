@@ -1,0 +1,20 @@
+.container {
+  background-color: rgb(222, 222, 222);
+
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  justify-content: center;
+
+  color: rgba(10, 10, 10, 0.853);
+
+  font-weight: 900;
+}
+
+.container :last-child{
+  margin-top: 5px;
+  fill: rgb(255, 4, 0);
+}
