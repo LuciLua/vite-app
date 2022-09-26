@@ -1,5 +1,7 @@
 import { useState } from "react"
-import styles from "../styles/Menu.module.scss"
+import styles from "../styles/menu.module.scss"
+import 'wmr'
+
 
 type MenuProps = {
 }

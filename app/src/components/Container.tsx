@@ -1,5 +1,6 @@
 import { useState } from "react"
-import styles from "../styles/container.module.scss"
+import style from "../styles/container.module.scss"
+import 'wmr'
 
 type ContainerProps = {
     title: string,
@@ -42,19 +43,19 @@ function Container(props: ContainerProps) {
     ])
 
     return (
-        <div className={styles.container}>
-            <div className={styles.header}>
+        <div className={style.container}>
+            <div className={style.header}>
                 <h1>{title}</h1>
                 <p>{description}</p>
             </div>
-            <div className={styles.containerCards}>
+            <div className={style.containerCards}>
                 {cards.map(card => {
                     return (
                         <Card key={card.id} title={card.title} description={card.description} />
                     )
                 })}
             </div>
-            <div className={styles.containerButton}>
+            <div className={style.containerButton}>
                 <button onClick={clickOnButton} />
             </div>
         </div>
@@ -64,7 +65,7 @@ function Container(props: ContainerProps) {
 function Card(props: CardProps) {
     const { title, description } = props
     return (
-        <div className={styles.card}>
+        <div className={style.card}>
             <h1>{title}</h1>
             <p>{description}</p>
         </div>

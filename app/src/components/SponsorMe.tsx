@@ -1,5 +1,6 @@
 import { useState } from "react"
-import styles from "../styles/Sponsor.module.scss"
+import styles from "../styles/sponsor.module.scss"
+import 'wmr'
 
 type SponsorMeProps = {
 }
