@@ -1,5 +1,5 @@
 import { useState } from "react"
-import style from "../styles/container.module.scss"
+import style from "../styles/container.module.css"
 
 type ContainerProps = {
     title: string,
