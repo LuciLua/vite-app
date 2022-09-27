@@ -18,15 +18,15 @@ function Container(props: ContainerProps) {
 
     function clickOnButton() {
 
-        let oldId = cards[cards.length - 1].id
         let counter = 0
+        let oldId = cards[cards.length - 1].id
         oldId != undefined ? counter = oldId + 1 : counter
 
         setCards([...cards,
         {
             id: counter,
             title: `Card ${counter}`,
-            description: "Description two hahaha description two hahaha description two hahaha"
+            description: `Description here! Lorem Ipsum lorem ipsum lorem ipsum! This is lorem ipsum example number ${counter}`
         }])
 
     }
@@ -37,7 +37,7 @@ function Container(props: ContainerProps) {
         {
             id: 0,
             title: "Card 0",
-            description: "Description two hahaha description two hahaha description two hahaha"
+            description: "Description here! Lorem Ipsum lorem ipsum lorem ipsum! This is lorem ipsum example"
         }
     ])
 
@@ -55,7 +55,7 @@ function Container(props: ContainerProps) {
                 })}
             </div>
             <div className={style.containerButton}>
-                <button onClick={clickOnButton} />
+                <button title="Add" onClick={clickOnButton} />
             </div>
         </div>
     )

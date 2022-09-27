@@ -31,6 +31,11 @@
   margin: 10px;
 }
 
+.menu nav ul li a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
+
 .menu .web {
   position: relative;
 
@@ -53,4 +58,19 @@
 .menu .web ul li {
   font-weight: 600;
   margin: 10px;
+}
+
+.menu .web ul li a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
+
+.menu nav ul li a:hover {
+  background: -webkit-linear-gradient(120deg, #82aef9 30%, #c6acff);
+
+  /* remove quadrado e so o text fica com a cor */
+  -webkit-background-clip: text; 
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
 }
