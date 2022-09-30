@@ -5,16 +5,55 @@
   height: 50vh;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
 
   justify-content: center;
 
   color: rgba(10, 10, 10, 0.853);
 
   font-weight: 900;
+z-index: -1;
+  position: relative;
+
+  overflow: hidden;
 }
+
+.container .retangle{
+  background-color: #0f172a;
+  width: 110%;
+  height: 40vh;
+  position: absolute;
+
+  top: -15em;
+  transform: rotateZ(4deg);
+
+  z-index: 2;
+
+  box-shadow: 2px 2px 12px #0c1325aa;
+}
+
+
 
 .container :last-child{
   margin-top: 5px;
   fill: rgb(255, 4, 0);
+}
+
+.container img{
+  max-width: 30vw;
+  object-fit: cover;
+
+  filter: grayscale(1);
+  border-radius: 10px;
+
+  z-index: -10;
+
+  left: 20px;
+
+  box-shadow: 5px 5px 18px 2px rgba(7, 7, 7, 0.092);
+
+  margin: 10px;
+
+  position: relative;
+
 }

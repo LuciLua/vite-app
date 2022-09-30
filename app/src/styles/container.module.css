@@ -9,6 +9,8 @@
   line-height: 2;
 
   background-color: #0f172a;
+
+  z-index: 1;
 }
 .container .header {
   max-width: 800px;
