@@ -1,15 +1,15 @@
 import '../src/styles/global.scss'
 import 'wmr'
 
-import { Container } from "./components/Container"
-import { Menu } from "./components/Menu"
 import { Main } from "./components/Main"
 import { SponsorMe } from "./components/SponsorMe"
 import usePost from './hooks/usePost'
+import Container from './components/Container/Container'
+import Menu from './components/Menu'
 
 function App() {
 
-  const [post] = usePost()
+  const [...post] = usePost()
 
 
   return (
@@ -17,8 +17,8 @@ function App() {
       <Menu />
       <Main />
       <Container
-        title={post.title}
-        description={post.description} />
+        title={'Cards'}
+        description={'cards with post here! cards with post here! cards with post here! cards with post here! cards with post here! cards with post here! cards with post here! cards with post here! cards with post here...'} />
       <SponsorMe />
     </>
   )

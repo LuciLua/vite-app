@@ -1,0 +1,146 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  width: 30px;
+  height: 30px;
+
+  position: fixed;
+
+  top: 10px;
+  left: 10px;
+
+  overflow: hidden;
+
+  transition: 0.5s;
+}
+
+.menu .content nav ul li.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 1px;
+
+  position: relative;
+
+}
+
+.menu nav ul li.logo {
+  width: 30px;
+  height: 30px;
+}
+.menu.active nav ul li.logo{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.menu.active nav ul .logo a{
+  padding: 20px;
+}
+
+.menu.active {
+  background: transparent;
+
+  width: 230px;
+  height: calc(100vh - 20px);
+
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+
+  transition: 0.5s;
+
+}
+
+.menu .content {
+  border-radius: 5px;
+}
+
+.content {
+  background: linear-gradient(#4949b6 20%, #0b0b4f);
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu nav {
+  position: relative;
+  width: 100%;
+}
+
+.menu nav ul {
+  display: flex;
+  flex-direction: column;
+  color: rgb(250, 250, 250);
+
+  /* padding: 0 30px; */
+
+  list-style: none;
+
+  position: relative;
+  width: 100%;
+}
+
+.menu nav ul li {
+  font-weight: 600;
+
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.menu nav ul li a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+
+  width: 100%;
+  height: 100%;
+
+  padding: 10px 15px;
+}
+
+.menu .web {
+  width: 100%;
+  position: relative;
+
+  margin: auto 10px 10px auto;
+}
+
+.menu .web ul {
+  display: flex;
+  color: rgb(250, 250, 250);
+
+  padding: 0 30px;
+
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu .web ul li {
+  font-weight: 600;
+  margin: 10px;
+}
+
+.menu .web ul li a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
+
+.menu nav ul li a:hover {
+  background-color: #ffffff26;
+}
