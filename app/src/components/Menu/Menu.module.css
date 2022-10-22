@@ -24,20 +24,23 @@
   margin: 1px;
 
   position: relative;
+}
 
+.menu.active .content nav ul li.logo a {
+  padding: 20px;
 }
 
 .menu nav ul li.logo {
   width: 30px;
   height: 30px;
 }
-.menu.active nav ul li.logo{
+.menu.active nav ul li.logo {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.menu.active nav ul .logo a{
+.menu.active nav ul .logo a {
   padding: 20px;
 }
 
@@ -53,7 +56,6 @@
   position: fixed;
 
   transition: 0.5s;
-
 }
 
 .menu .content {
